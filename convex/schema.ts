@@ -1,4 +1,3 @@
-import { time } from "console";
 import { defineSchema, defineTable } from "convex/server";
 import {v} from "convex/values"
 
@@ -12,7 +11,8 @@ export default defineSchema({
         games: v.optional(v.array(v.string())),
         playstyles: v.optional(v.array(v.string())),
         bio: v.optional(v.string()),
-    }),
+        clerkId : v.string(),
+    }).index("by_clerk_id", ["clerkId"]),
 
     sessions: defineTable({
         hostId : v.string(),

@@ -1,3 +1,5 @@
+import { UserButton } from "@clerk/nextjs";
+
 export default function Navbar() {
   return (
     <nav className="bg-gray-50 shadow-sm">
@@ -7,6 +9,7 @@ export default function Navbar() {
           <a href="/" className="hover:underline"> Home </a>
           <a href="/create" className="hover:underline"> Create Session</a>
           <a href="" className="hover:underline"> Profile</a>
+      <UserButton/>
         </div>
       </div>
     </nav>
