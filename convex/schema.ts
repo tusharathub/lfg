@@ -24,6 +24,7 @@ export default defineSchema({
         notes: v.optional(v.string()),
         links: v.optional(v.string()),
         createdAt: v.number(),
+        participants: v.optional(v.array(v.string())),
     }).index("by_game", ["game"]),
 
     session_members : defineTable({
