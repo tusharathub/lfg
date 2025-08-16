@@ -8,7 +8,6 @@ export const createSession = mutation({
     game: v.string(),
     platform: v.string(),
     time: v.number(),
-    playersNeeded: v.number(),
     tags: v.array(v.string()),
     notes: v.optional(v.string()),
     link: v.optional(v.string()),

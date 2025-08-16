@@ -20,7 +20,6 @@ export default defineSchema({
         game : v.string(),
         platform : v.string(),
         time: v.number(),
-        playersNeeded: v.number(),
         tags: v.array(v.string()),
         notes: v.optional(v.string()),
         links: v.optional(v.string()),
