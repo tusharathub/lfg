@@ -8,6 +8,7 @@ export default function Navbar() {
         <div className="space-x-4">
           <a href="/" className="hover:underline"> Home </a>
           <a href="/create" className="hover:underline"> Create Session</a>
+          <a href="/browse" className="hover:underline"> Browse</a>
           <a href="" className="hover:underline"> Profile</a>
       <UserButton/>
         </div>

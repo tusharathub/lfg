@@ -31,5 +31,5 @@ export default defineSchema({
         sessionId : v.id("sessions"),
         userId : v.string(),
         joinedAt: v.number(),
-    }).index("by_session", ["sessionId"])
+    }).index("by_session", ["sessionId"]),
 })
